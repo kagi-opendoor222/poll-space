@@ -1,6 +1,3 @@
-# README
-
-
 # 投票アプリケーション(プロトタイプ)
 
 
@@ -91,31 +88,3 @@ twitterなどのSNSを通してこのアプリケーションの存在を知り�
 お互いの意見を知る機会がないという事は、成長の機会が奪われているという事なので双方にとって好ましくないはずだ。
 さらに多様な意見を取り込んだ面白いコンテンツというものも産まれにくくなる。
 そういった状況を変えるのに少しでも貢献できる可能性となればと思い、このWebアプリケーションを作る事に決めた。
-
-
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-
