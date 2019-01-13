@@ -1,23 +1,31 @@
 # 投票アプリケーション(プロトタイプ)
 
+## Table of View
 
-[Overview](#overview)
+- [Overview](#Overview)
+- [Setting](#Setting)
+- [Gem](#Gem)
+- [Table](#Table)
+- [Purpose](#Purpose)
+- [Function](#function)
+- [Target](#Target)
+- [Background](#Background)
 
-## overview
+
+## Overview
 少数派と多数派の意見が同列の扱いでピックアップされる投票アプリケーションのプロトタイプ
 
-## 設定
+## Setting
 - ruby 2.5.1
 - Rails 5.2.2
 
-### gem
+### Gem
 - Devise
 - OmniOath
 - OmniOath for twitter
 
-## テーブル設計
-### themesテーブル
-
+## Table
+### themes
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null:false|
@@ -26,33 +34,33 @@
 |end_time|datetime||
 |user_id|references|foreign_key: true|
 
-### groupテーブル
+### group
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null:false|
 |message|text||
 |theme_id|references|foreign_key: true|
 
-### voteテーブル
+### vote
 |Column|Type|Options|
 |------|----|-------|
 |message|text||
 |group_id|references|foreign_key: true|
 |user_id|references|foreign_key: true|
 
-### userテーブル
+### user
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null:false|
 |email|string||
 |provider_id|references|foreign_key: true|
 
-### providerテーブル
+### provider
 |Column|Type|Options|
 |------|----|-------|
 |name|string||
 
-### twitter_accountテーブル
+### twitter_account
 |Column|Type|Options|
 |------|----|-------|
 |uid|integer||
@@ -61,14 +69,14 @@
 
 
 
-## アプリケーションの目的
+## Purpose
 投票という形式で自然に楽しみながら多数派が少数派の意見を知る事ができる環境を提供する事。
 少数派と多数派の意見を同頻度でピックアップすることで、少数派は多くの人に自分の意見を知ってもらう場を得る事ができ、多数派からすると新しい知見を得て、自分の意見を昇華する機会を得る事ができるようにしたい。
 お堅い議論の場ではなく、面白そうなアプリケーションを利用していたら自然とそういった恩恵を得ていた、という形が理想。
 
 (投票という仕組みで多数派と少数派がはっきりと明示されるため、ユーザーが少数派である事に引け目を感じる事のなく、自由に意見発信できるような仕組みを導入する必要がある。)
 
-## 機能
+## Function
 最も基本的な機能は投票を募集する機能と投票に参加する機能である。
 twitterアカウント連携で登録したユーザーは投票を募集する事ができ、他のユーザーは自由にそれに参加する事ができる。
 
@@ -78,12 +86,12 @@ twitterアカウント連携で登録したユーザーは投票を募集する�
 
 最新の投票、参加者の多い投票、友人の投票などはトップページで確認する事ができ、自分が募集・参加している投票はマイページにて閲覧できる。
 
-## ターゲット
+## Target
 インターネットなどを通して人との繋がりや意見の発信などが好きなSNSユーザー全般。
 twitterなどのSNSを通してこのアプリケーションの存在を知り、試しに利用してみるという流れでユーザ獲得する事を想定する。
 したがって、SNSとの連携を中心に、初見でどうやって興味を持ってもらうかを意識してアプリケーションを作る。
 
-## 背景
+## Background
 ユーザーはインターネット上に存在する数多くの選択肢から好きなもの選び、利用する事ができる。
 その性質上、自分にとって居心地の良い同種の考えを持つもの同士でコミュニティが作られる事が多くなる。
 結果的に反対意見は自然と排除され、意見や主義主張が先鋭化し、過激なものに陥ってしまう集団極性化という現象が起こりやすくなっている。
