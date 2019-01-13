@@ -1,12 +1,14 @@
 # README
 
+
 # 投票アプリケーション(プロトタイプ)
+
 
 ## アプリケーション概要
 少数派と多数派の意見が同列の扱いでピックアップされる投票アプリケーションのプロトタイプ
 
-## テーブル設計
 
+## テーブル設計
 ### themesテーブル
 
 |Column|Type|Options|
@@ -45,6 +47,7 @@
 
 ### twitter_accountテーブル
 |Column|Type|Options|
+|------|----|-------|
 |uid|integer||
 |user_id|references|foreign_key: true|
 
