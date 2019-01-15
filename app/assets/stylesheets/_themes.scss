@@ -2,6 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+h1{
+  font-size: 1.5rem;
+}
+h2{
+  font-size: 1.5rem;
+}
+
 .header{
   background-color: green;
   height: 40px;
@@ -10,15 +17,19 @@
 .page-container{
   display:         flex;
   justify-content: center;
-  margin: 0 auto;
+  margin: 30px auto;
   .dashboard{
     width: 400px;
-    height: 1000px;
-    background-color: red;
+    .dashboard-main{
+      background-color: red;
+      height: 1000px;
+    }
   }
   .main-content{
-    background-color: blue;
     width: 700px;
-    height: 1000px;
+    .stream{
+      background-color: blue;
+      height: 1000px;
+    }
   }
 }
