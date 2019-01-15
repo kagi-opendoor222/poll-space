@@ -2,3 +2,23 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.header{
+  background-color: green;
+  height: 40px;
+}
+
+.page-container{
+  display:         flex;
+  justify-content: center;
+  margin: 0 auto;
+  .dashboard{
+    width: 400px;
+    height: 1000px;
+    background-color: red;
+  }
+  .main-content{
+    background-color: blue;
+    width: 700px;
+    height: 1000px;
+  }
+}
