@@ -21,8 +21,9 @@ h2{
   .dashboard{
     width: 400px;
     .dashboard-main{
-      background-color: red;
       height: 1000px;
+      padding: 20px 20px;
+      background-color: red;
     }
   }
   .main-content{
@@ -32,4 +33,21 @@ h2{
       height: 1000px;
     }
   }
+}
+
+.user-info{
+  display: flex;
+  background-color: white;
+  &__img{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+
+  }
+  &__count{
+    width: 250px;
+    height: 100px;
+
+  }
+
 }
