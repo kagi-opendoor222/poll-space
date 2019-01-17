@@ -1,5 +1,5 @@
 // Place all the styles related to the themes controller here.
-// They will automatically be included in application.css.
+// They will automatically be included i application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 h1{
@@ -9,21 +9,30 @@ h2{
   font-size: 1.5rem;
 }
 
-.header{
-  background-color: green;
+body{
+    // background: url("https://www.illust-pocket.com/wp-content/uploads/2016/12/colorful_frame_5641-500x375.jpg");
+}
+
+ .header{
+//   background-color: #6CFF55;
+  background-color: #FFFFFF;
   height: 40px;
+  color: black;
+  border-bottom: solid 5px #46FF2A;
 }
 
 .page-container{
   display:         flex;
   justify-content: center;
-  margin: 30px auto;
+  margin: 0 auto;
+  padding: 30px 0;
+  background-color: rgba(white, 0.3);
   .dashboard{
     width: 400px;
     .dashboard-main{
       height: 1000px;
       padding: 30px 20px;
-      background-color: red;
+      border: solid 1px black;
     }
   }
   .main-content{
@@ -31,7 +40,7 @@ h2{
     .main-content-board{
       height: 1000px;
       padding: 30px;
-      background-color: blue;
+      border: solid 1px black;
     }
   }
 }
@@ -69,4 +78,15 @@ h2{
     p{
     }
   }
+}
+
+.testred{
+  background-color: #FF556C;
+  width: 100px;
+  height: 100px
+}
+.testyellow{
+  background-color: #5566FF;
+  width: 100px;
+  height: 100px
 }
