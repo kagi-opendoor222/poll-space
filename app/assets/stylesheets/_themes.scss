@@ -63,10 +63,25 @@ body{
   &__count{
     width: 250px;
     height: 100px;
+    margin: 15px 0 0 20px;
+    display: flex;
+    flex-direction: row-reverse;
+      .count-status{
+        width: 75px;
+        margin-left: 10px;
+        &__name{
+          font-size: 0.9rem;
 
+        }
+        &__value{
+          font-size: 1.5rem;
+          float: right;
+        }
+      }
   }
-
 }
+
+
 
 .theme-card{
   border: solid 1px green;
