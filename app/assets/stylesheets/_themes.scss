@@ -91,9 +91,20 @@ body{
 
 
 .theme-card{
-  border: solid 1px green;
-  padding: 15px;
+  // border: solid 3px $headerAccent;
+  box-shadow: 1px 1px 2px;
+  margin-bottom: 35px;
   .theme-card__theme{
+    // border-bottom: solid 3px $headerAccent;
+    background: url("https://photo-pot.com/wp/wp-content/uploads/2011/08/town1.jpg");
+    .theme-card__theme-inside{
+      height: 100px;
+      padding: 10px 10px;
+      background-color: rgba(#8E8E8E, 0.8);
+      color: white;
+      box-sizing: border-box;
+      font-size: 1.2rem;
+    }
   }
   &__user{
     background-color: white;
