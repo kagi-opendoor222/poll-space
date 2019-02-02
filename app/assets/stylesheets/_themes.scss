@@ -102,13 +102,17 @@ body{
   .theme-card__title{
     // border-bottom: solid 3px $headerAccent;
     background: url("https://photo-pot.com/wp/wp-content/uploads/2011/08/town1.jpg");
-    .theme-card__title-inside{
-      height: 100px;
-      padding: 10px 10px;
-      background-color: rgba(#8E8E8E, 0.8);
+    background-size:cover;
+    .theme-detail{
+      height: 120px;
       color: white;
       box-sizing: border-box;
       font-size: 1.2rem;
+      &__title{
+        display: inline-block;
+        background-color: rgba(#8E8E8E, 0.7);
+        padding: 5px 50px;
+      }
     }
   }
   &__user{
