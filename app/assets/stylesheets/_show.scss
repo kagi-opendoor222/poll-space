@@ -14,5 +14,20 @@
   justify-content: center;
 }
 
-
+.group-board{
+  background-color: blue;
+  width: 500px;
+  height: 500px;
+  margin: 0 30px;
+  .group-board-top{
+    background: url("https://photo-pot.com/wp/wp-content/uploads/2011/08/town1.jpg");
+    .group-detail{
+      height: 300px;
+      padding: 10px 10px;
+      background-color: rgba(#8E8E8E, 0.8);
+      color: white;
+      box-sizing: border-box;
+      font-size: 1.2rem;
+    }
+  }
 }
