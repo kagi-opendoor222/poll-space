@@ -36,6 +36,13 @@
           border: solid 1px white;
           width: 70%;
           height: 30px;
+          position: relative;
+          .score{
+            font-size: 2rem;
+            position: absolute;
+            right: 0px;
+            bottom: -23px;
+          }
         }
       }
     }
