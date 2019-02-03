@@ -16,26 +16,33 @@
 
 .group-board{
   width: 500px;
-  height: 500px;
+  height: 600px;
   margin: 0 30px;
   box-shadow: 1px 1px 2px;
+  background-color: white;
   .group-board-top{
     background: url("https://www.pakutaso.com/shared/img/thumb/KAZTDSCF7026_TP_V.jpg");
     background-size:cover;
     .group-detail{
       height: 300px;
-      padding: 10px 10px;
-      background-color: rgba(#8E8E8E, 0.8);
+      // padding: 20px 30px;
+      // background-color: rgba(#8E8E8E, 0.8);
       color: white;
       box-sizing: border-box;
       font-size: 1.2rem;
+      &__title{
+        padding: 5px 50px;
+        background-color: rgba(#8E8E8E, 0.8);
+        display: inline-block;
+        font-size: 1.7rem;
+      }
       &__bar-graph{
-         margin-top: 170px;
+         margin: 180px 50px 0;
         .bar{
           background: linear-gradient(#0C0, #090);
           border: solid 1px white;
           width: 70%;
-          height: 30px;
+          height: 25px;
           position: relative;
           .score{
             font-size: 2rem;
