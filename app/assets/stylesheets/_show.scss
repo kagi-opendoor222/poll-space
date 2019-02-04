@@ -85,3 +85,13 @@
     }
   }
 }
+
+.poll-button{
+  display: inline-block;
+  background-color: rgba(#009F8C, 0.9);
+  margin: -30px 40px;
+  padding:  2px 20px;
+  border-radius: 10px;
+  border: solid 1px white;
+  float: right;
+}
