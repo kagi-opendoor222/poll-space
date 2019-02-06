@@ -10,10 +10,11 @@ h2{
 }
 
 body{
-    // background: url("https://www.illust-pocket.com/wp-content/uploads/2016/12/colorful_frame_5641-500x375.jpg");
-    // background-image: url(http://en.freejpg.com.ar/asset/900/94/940a/F100007969.jpg);
-    // background-size: contain;
-    // background-attachment: fixed;
+    background: url("https://www.illust-pocket.com/wp-content/uploads/2016/12/colorful_frame_5641-500x375.jpg");
+    background-image: url(http://en.freejpg.com.ar/asset/900/94/940a/F100007969.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #EBEDED;
 }
 
  .header{
@@ -30,7 +31,6 @@ body{
   display:         flex;
   justify-content: center;
   margin: 0 auto;
-  padding: 30px 0;
   // background-color: rgba($topBackground, 0.85);
   .dashboard{
     width: 300px;
@@ -62,7 +62,6 @@ body{
 .user-info{
   display: flex;
   background-color: white;
-
   padding: 0 15px;
   &__img{
     width: 75px;
@@ -119,6 +118,7 @@ body{
     background-color: white;
     display: flex;
     align-items: center;
+    padding: 5px 5px;
     img{
       width: 40px;
       height: 40px;
