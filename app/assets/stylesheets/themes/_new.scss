@@ -19,20 +19,10 @@
 }
 
 .input-group-boards{
-  // background-color: red;
-  width:  1060px;
-  margin-top: 50px;
-  // height: 2000px;
-
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  @include group-boards-setting();
 }
 
 .input-group-board{
-  width: 500px;
   height: $groupBoardTopHeight;
-  // margin: 0 30px;
-  box-shadow: 1px 1px 2px;
-  background-color: white;
+  @include group-board-setting();
 }

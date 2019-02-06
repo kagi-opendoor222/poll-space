@@ -12,23 +12,14 @@
   margin: 0 auto;
   padding: 5px 20px;
 }
-.group-boards{
-  // background-color: red;
-  width:  1060px;
-  margin-top: 50px;
-  // height: 2000px;
 
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.group-boards{
+  @include group-boards-setting();
 }
 
 .group-board{
-  width: 500px;
   height: 600px;
-  // margin: 0 30px;
-  box-shadow: 1px 1px 2px;
-  background-color: white;
+  @include group-board-setting();
   .group-board-top{
     // background: url("https://www.pakutaso.com/shared/img/thumb/KAZTDSCF7026_TP_V.jpg");
     background: url("https://photo-pot.com/wp/wp-content/uploads/2011/08/town1.jpg");
