@@ -1,34 +1,37 @@
 .page-container{
   background-color: rgba($topBackground, 0.85);
-  padding: 50px 0 5px;
+  padding: 70px 0 5px;
 }
 .theme-title{
-  width: 1060px;
+  width: $basePageWidth;
   background-color: white;
   // box-shadow: 1px 1px 2px;
-  margin: 50px auto 5px;
-  font-size: 2rem;
+  font-size: 1.3rem;
   border-left: solid 10px $mainColor;
   box-sizing: border-box;
+  margin: 0 auto;
   padding: 5px 20px;
 }
 .group-boards{
   // background-color: red;
-  width:  1050px;
-  height: 2000px;
+  width:  1060px;
+  margin-top: 50px;
+  // height: 2000px;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .group-board{
   width: 500px;
   height: 600px;
-  margin: 0 30px;
+  // margin: 0 30px;
   box-shadow: 1px 1px 2px;
   background-color: white;
   .group-board-top{
-    background: url("https://www.pakutaso.com/shared/img/thumb/KAZTDSCF7026_TP_V.jpg");
+    // background: url("https://www.pakutaso.com/shared/img/thumb/KAZTDSCF7026_TP_V.jpg");
+    background: url("https://photo-pot.com/wp/wp-content/uploads/2011/08/town1.jpg");
     background-size:cover;
     .group-detail{
       height: 300px;
@@ -38,15 +41,15 @@
       box-sizing: border-box;
       font-size: 1.2rem;
       &__title{
-        padding: 5px 50px;
+        padding: 10px 50px;
         background-color: rgba(#8E8E8E, 0.8);
         display: inline-block;
-        font-size: 1.7rem;
+        font-size: 1.5rem;
       }
       &__bar-graph{
          margin: 180px 50px 0;
         .bar{
-          background: linear-gradient(#0C0, #090);
+          background: linear-gradient(#40BFB0, #009F8C);
           border: solid 1px white;
           width: 70%;
           height: 25px;
@@ -62,10 +65,11 @@
     }
   }
   .group-board-bottom{
+    background-color: white;
     .comments{
       padding: 20px;
       .comment{
-        height: 100px;
+        min-height: 100px;
         background-color: #C8EFEA;
         border-radius: 10px;
         padding: 20px;
