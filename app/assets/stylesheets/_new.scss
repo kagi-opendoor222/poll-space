@@ -1,0 +1,38 @@
+.theme-create-form{
+  margin: 0 auto;
+  width: $basePageWidth;
+  // background-color: white;
+  height: 1000px;
+  &__input-theme-name{
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+  }
+  &__input-group-name{
+    width: 60%;
+    height: 50px;
+  }
+  &__input-grpup-message{
+    width: 90%;
+    height: 70px;
+  }
+}
+
+.input-group-boards{
+  // background-color: red;
+  width:  1060px;
+  margin-top: 50px;
+  // height: 2000px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.input-group-board{
+  width: 500px;
+  height: $groupBoardTopHeight;
+  // margin: 0 30px;
+  box-shadow: 1px 1px 2px;
+  background-color: white;
+}
