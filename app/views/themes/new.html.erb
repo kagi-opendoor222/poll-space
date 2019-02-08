@@ -2,16 +2,19 @@
   <div class="theme-title">
     投票テーマ作成フォーム
   </div>
-    <input type="text" name="" class="theme-create-form__input-theme-name" placeholder="投票テーマを入力してください。">
   <form class="theme-create-form">
+    <label for="theme-create-form__input-theme-name">投票テーマ入力</label>
+    <input type="text" name="" class="theme-create-form__input-theme-name" placeholder="例：犬派か猫派かあなたはどっち？">
     <div class="input-group-boards">
       <div class="input-group-board">
-        <input type="text" name="" class="theme-create-form__input-group-name" placeholder="回答1">
-        <textarea class="theme-create-form__input-grpup-message" placeholder="めっせーじ"></textarea>
+        <label>回答1</label><br>
+        <input type="text" name="" class="theme-create-form__input-group-name" placeholder="例：犬派"><br>
+        <label>メッセージ</label><br>
+        <textarea class="theme-create-form__input-grpup-message" placeholder="めっせーじ"></textarea><br>
+        <label>画像</label><br>
         <input type="file">
       </div>
       <div class="input-group-board"></div>
     </div>
   </form>
 </div>
-
