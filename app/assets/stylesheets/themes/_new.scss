@@ -52,6 +52,41 @@
       border-left: solid 3px #009F8C;
     }
   }
+  &__submit{
+    width: 120px;
+    height: 50px;
+    background-color: white;
+    color: $mainColor;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: solid 1px $mainColor;
+    border-left: solid 10px $mainColor;
+    outline: none;
+    padding: 0;
+    appearance: none;
+    position: relative;
+    &:hover span{
+      position: relative;
+      color: white;
+      z-index: 1;
+    }
+    &::before{
+      content: "";
+      display: inline-block;
+      background-color: $mainColor;
+      height: 100%;
+      width: 0%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: 0.2s;
+    }
+    &:hover:before{
+      width: 100%;
+    }
+  }
 }
 
 .input-group-boards{
