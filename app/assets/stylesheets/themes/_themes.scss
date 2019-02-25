@@ -115,15 +115,8 @@ body{
     }
   }
   &__user{
+    @include sm-user-name-setting();
     background-color: white;
-    display: flex;
-    align-items: center;
-    padding: 5px 5px;
-    img{
-      width: 40px;
-      height: 40px;
-    }
-    p{
-    }
+
   }
 }

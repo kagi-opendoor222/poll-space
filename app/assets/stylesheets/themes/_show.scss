@@ -67,18 +67,10 @@
 
         position: relative;
         &__user{
-          display: flex;
-          align-items: center;
-          padding: 5px 5px;
+          @include sm-user-name-setting();
           position: absolute;
           right: 20px;
           bottom: 0;
-          img{
-            width: 40px;
-            height: 40px;
-          }
-          p{
-          }
         }
       }
     }
