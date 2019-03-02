@@ -1,0 +1,88 @@
+.page-container{
+  background-color: rgba($topBackground, 0.85);
+  padding: 70px 0 5px;
+}
+.theme-title{
+  width: $basePageWidth;
+  background-color: white;
+  // box-shadow: 1px 1px 2px;
+  font-size: 1.3rem;
+  border-left: solid 10px $mainColor;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 5px 20px;
+}
+
+.group-boards{
+  @include group-boards-setting();
+}
+
+.group-board{
+  height: 600px;
+  @include group-board-setting();
+  .group-board-top{
+    // background: url("https://www.pakutaso.com/shared/img/thumb/KAZTDSCF7026_TP_V.jpg");
+    background: url("https://photo-pot.com/wp/wp-content/uploads/2011/08/town1.jpg");
+    background-size:cover;
+    .group-detail{
+      height: 300px;
+      // padding: 20px 30px;
+      // background-color: rgba(#8E8E8E, 0.8);
+      color: white;
+      box-sizing: border-box;
+      font-size: 1.2rem;
+      &__title{
+        padding: 10px 50px;
+        background-color: rgba(#8E8E8E, 0.8);
+        display: inline-block;
+        font-size: 1.5rem;
+      }
+      &__bar-graph{
+         margin: 180px 50px 0;
+        .bar{
+          background: linear-gradient(#40BFB0, #009F8C);
+          border: solid 1px white;
+          width: 70%;
+          height: 25px;
+          position: relative;
+          .score{
+            font-size: 2rem;
+            position: absolute;
+            right: 0px;
+            bottom: -23px;
+          }
+        }
+      }
+    }
+  }
+  .group-board-bottom{
+    background-color: white;
+    .comments{
+      padding: 20px;
+      .comment{
+        min-height: 100px;
+        background-color: #C8EFEA;
+        border-radius: 10px;
+        padding: 20px;
+
+        position: relative;
+        &__user{
+          @include sm-user-name-setting();
+          position: absolute;
+          right: 20px;
+          bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.poll-button{
+  display: inline-block;
+  background-color: rgba(#009F8C, 0.9);
+  margin: -30px 40px;
+  padding:  2px 20px;
+  border-radius: 10px;
+  border: solid 1px white;
+  float: right;
+}

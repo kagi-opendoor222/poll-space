@@ -1,0 +1,122 @@
+// Place all the styles related to the themes controller here.
+// They will automatically be included i application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1{
+  font-size: 1.5rem;
+}
+h2{
+  font-size: 1.5rem;
+}
+
+body{
+    background: url("https://www.illust-pocket.com/wp-content/uploads/2016/12/colorful_frame_5641-500x375.jpg");
+    background-image: url(http://en.freejpg.com.ar/asset/900/94/940a/F100007969.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #EBEDED;
+}
+
+ .header{
+//   background-color: #6CFF55;
+  background-color: #FFFFFF;
+  height: 80px;
+  color: black;
+  padding: 25px 195px 0px;
+  box-sizing: border-box;
+  border-bottom: solid 10px $headerAccent;
+}
+
+.contents-container{
+  display:         flex;
+  justify-content: center;
+  margin: 0 auto;
+  // background-color: rgba($topBackground, 0.85);
+  .dashboard{
+    width: 300px;
+    .dashboard-main{
+      background-color: white;
+      box-shadow: 1px 1px 2px;
+      // border: solid 2px #23AC0E;
+    }
+  }
+  .main-content{
+    width: 700px;
+    margin-left: 80px;
+    .main-content-board{
+      height: 1000px;
+      padding: 0;
+    }
+  }
+}
+
+.color-bar{
+  height: 50px;
+  background-color: $userDashboard;
+  color: white;
+  &__user-name{
+    font-size: 1.1rem;
+    padding: 20px 0px 0px 105px
+  }
+}
+.user-info{
+  display: flex;
+  background-color: white;
+  padding: 0 15px;
+  &__img{
+    width: 75px;
+    height: 75px;
+    margin-top: -30px;
+    border: 1px solid black;
+    background-color: white;
+  }
+  &__count{
+    width: 250px;
+    height: 200px;
+    margin: 50px 0 0 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+      .count-status{
+        width: 70px;
+        margin-left: 20px;
+        &__name{
+          font-size: 0.7rem;
+
+        }
+        &__value{
+          font-size: 1.3rem;
+          float: right;
+        }
+      }
+  }
+}
+
+
+
+.theme-card{
+  // border: solid 3px $headerAccent;
+  box-shadow: 1px 1px 2px;
+  margin-bottom: 35px;
+  .theme-card__title{
+    // border-bottom: solid 3px $headerAccent;
+    background: url("https://photo-pot.com/wp/wp-content/uploads/2011/08/town1.jpg");
+    background-size:cover;
+    .theme-detail{
+      height: 120px;
+      color: white;
+      box-sizing: border-box;
+      font-size: 1.2rem;
+      &__title{
+        display: inline-block;
+        background-color: rgba(#8E8E8E, 0.7);
+        padding: 5px 50px;
+      }
+    }
+  }
+  &__user{
+    @include sm-user-name-setting();
+    background-color: white;
+
+  }
+}
