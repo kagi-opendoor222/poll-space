@@ -2,28 +2,20 @@
   <div class="theme-title">
     投票テーマ作成フォーム
   </div>
-  <%= form_with model: @theme, class:"theme-create-form", local: true do |form| %>
-    <%= form.label "theme-create-form__input-theme-name", "投票テーマ入力" %>
-    <%= form.text_field :name, class: "theme-create-form__input-theme-name" %>
-
+  <form class="theme-create-form">
+    <label for="theme-create-form__input-theme-name">投票テーマ入力</label>
+    <input type="text" name="" class="theme-create-form__input-theme-name" placeholder="例：犬派か猫派かあなたはどっち？">
     <div class="input-group-boards">
-      <% number_of_groups = 2 %>
-      <% (1..number_of_groups).each do |i| %>
-        <div class="input-group-board">
-          <%= form.label "theme-create-form__input-group-name", "回答#{i}" %><br>
-          <%= form.text_field "group_name#{i}".to_sym, class: "theme-create-form__input-group-name", placeholder: "例：犬派" %><br>
-          <%= form.label "theme-create-form__input-group-message", "メッセージ" %>
-          <%= form.text_area "group_message#{i}".to_sym, class: "theme-create-form__input-grpup-message", placeholder: "例：かわいい" %><br>
-          <label>画像</label><br>
-          <input type="file">
-        </div>
-      <% end %>
+      <div class="input-group-board">
+        <label>回答1</label><br>
+        <input type="text" name="" class="theme-create-form__input-group-name" placeholder="例：犬派"><br>
+        <label>メッセージ</label><br>
+        <textarea class="theme-create-form__input-grpup-message" placeholder="めっせーじ"></textarea><br>
+        <label>画像</label><br>
+        <input type="file">
+      </div>
+      <div class="input-group-board"></div>
     </div>
-
-    <label>
-      <div class="theme-create-form__submit"><span>作成！</span></div>
-      <%= form.hidden_field :number_of_groups, value: number_of_groups %>
-      <%= form.submit style: "display: none" %>
-    </label>
-  <% end %>
+    <div class="theme-create-form__submit"><span>作成！</span></div>
+  </form>
 </div>
