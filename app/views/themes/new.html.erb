@@ -11,9 +11,9 @@
       <% (1..number_of_groups).each do |i| %>
         <div class="input-group-board">
           <%= form.label "theme-create-form__input-group-name", "回答#{i}" %><br>
-          <%= form.text_field "group_name#{i}".to_sym, class: "theme-create-form__input-group-name", placeholder: "例：犬派" %><br>
+          <%= text_field "group[group#{i}]".to_sym, "name#{i}".to_sym, class: "theme-create-form__input-group-name", placeholder: "例：犬派" %><br>
           <%= form.label "theme-create-form__input-group-message", "メッセージ" %>
-          <%= form.text_area "group_message#{i}".to_sym, class: "theme-create-form__input-grpup-message", placeholder: "例：かわいい" %><br>
+          <%= text_area "group[group#{i}]".to_sym, "message#{i}".to_sym, class: "theme-create-form__input-grpup-message", placeholder: "例：かわいい" %><br>
           <label>画像</label><br>
           <input type="file">
         </div>
@@ -22,7 +22,7 @@
 
     <label>
       <div class="theme-create-form__submit"><span>作成！</span></div>
-      <%= form.hidden_field :number_of_groups, value: number_of_groups %>
+      <%= hidden_field :group, :number_of_groups, value: number_of_groups %>
       <%= form.submit style: "display: none" %>
     </label>
   <% end %>
