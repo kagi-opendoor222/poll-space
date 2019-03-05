@@ -8,7 +8,7 @@
 
     <div class="input-group-boards">
       <% number_of_groups = 2 %>
-      <% (1..number_of_groups).each do |i| %>
+      <% number_of_groups.times do |i| %>
         <div class="input-group-board">
           <%= form.label "theme-create-form__input-group-name", "回答#{i}" %><br>
           <%= text_field "group[group#{i}]".to_sym, "name#{i}".to_sym, class: "theme-create-form__input-group-name", placeholder: "例：犬派" %><br>
