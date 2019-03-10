@@ -36,8 +36,9 @@
     <div class="main-content">
       <div class="main-content-top">
         <h2>Poll</h2>
-        <a class="main-content-top__post-theme-button">
-        </a>
+        <%= link_to new_theme_path, class:"main-content-top__post-theme-button" do%>
+          <span>テーマを投稿</span>
+        <% end %>
       </div>
       <div class="main-content-board">
         <div class="stream">
