@@ -15,7 +15,7 @@
                   <div class="score">70%</div>
                 </div>
               </div>
-              <div class="poll-button">投票</div>
+              <%= link_to "投票", votes_path, method: :post, class: "poll-button" %>
             </div>
           </div>
           <div class="group-board-bottom">
@@ -34,33 +34,6 @@
           </div>
         </li>
       <% end %>
-      <!-- <li class="group-board">
-        <div class="group-board-top">
-          <div class="group-detail">
-            <div class="group-detail__title">タイトル</div>
-            <div class="group-detail__bar-graph">
-              <div class="bar">
-                <div class="score">70%</div>
-              </div>
-            </div>
-            <div class="poll-button">投票</div>
-          </div>
-        </div>
-        <div class="group-board-bottom">
-          <ul class="comments">
-            comments
-            <li class="comment">
-              <div class="comment__message">
-                テストテストテストテストテストテストテストテスト
-              </div>
-              <div class="comment__user">
-                <img src="https://ai-catcher.com/wp-content/uploads/icon_74-1.png">
-                <p>nickname</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </li> -->
     </ul>
   </div>
 </div>
