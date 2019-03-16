@@ -10,8 +10,6 @@ h2{
 }
 
 body{
-    background: url("https://www.illust-pocket.com/wp-content/uploads/2016/12/colorful_frame_5641-500x375.jpg");
-    background-image: url(http://en.freejpg.com.ar/asset/900/94/940a/F100007969.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-color: #EBEDED;
@@ -24,7 +22,7 @@ body{
   color: black;
   padding: 25px 195px 0px;
   box-sizing: border-box;
-  border-bottom: solid 10px $headerAccent;
+  border-bottom: solid 3px $headerAccent;
 }
 
 .contents-container{
@@ -90,7 +88,6 @@ body{
       }
     }
     .main-content-board{
-      height: 1000px;
       padding: 0;
     }
   }
