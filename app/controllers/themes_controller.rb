@@ -12,6 +12,9 @@ class ThemesController < ApplicationController
     end
     redirect_to themes_path
   end
+  def show
+    @theme = Theme.find(params[:id])
+  end
   private
   def theme_params
     params.require(:theme).permit(:name)
