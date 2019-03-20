@@ -15,7 +15,9 @@
                   <div class="score">70%</div>
                 </div>
               </div>
-              <%= link_to "投票", votes_path(group_id: group.id), method: :post, class: "poll-button" %>
+              <%= form_with url: votes_path(group_id: group.id), local: true do |form| %>
+                <%= form.submit "投票", class: "poll-button" %>
+              <% end %>
             </div>
           </div>
           <div class="group-board-bottom">
