@@ -3,6 +3,9 @@ class Group < ApplicationRecord
   has_many :votes
 
   def votes_count
-    return self.votes.length
+    self.votes.length
+  end
+  def self.votes_counts
+    self.all.map(&:votes_count)
   end
 end
