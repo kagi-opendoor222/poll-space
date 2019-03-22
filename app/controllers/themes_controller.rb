@@ -14,6 +14,7 @@ class ThemesController < ApplicationController
   end
   def show
     @theme = Theme.find(params[:id])
+    binding.pry
   end
   private
   def theme_params
