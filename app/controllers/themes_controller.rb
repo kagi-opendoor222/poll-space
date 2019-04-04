@@ -14,8 +14,12 @@ class ThemesController < ApplicationController
   end
   def show
     @theme = Theme.find(params[:id])
-    @votes_counts = @theme.groups.votes_counts
-    binding.pry
+    # @votes_counts = @theme.groups.votes_counts
+    # @votes_ratios = Group.to_ratio(@votes_counts)
+    # @votes_ratios = @votes_counts.to_ratio
+    # @votes_ratios = @votes_counts.map do |count|
+    #   binding.pry
+    # end
   end
   private
   def theme_params

@@ -8,4 +8,8 @@ class Group < ApplicationRecord
   def self.votes_counts
     self.all.map(&:votes_count)
   end
+  def vote_ratio
+    all_counts = self.theme.groups.votes_counts
+    return (self.votes.length.to_f / all_counts.sum * 100).round
+  end
 end
