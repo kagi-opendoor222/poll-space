@@ -14,7 +14,7 @@
               <div class="group-detail__title"><%= group.name %></div>
               <div class="group-detail__bar-graph">
                 <div class="bar">
-                  <div class="score"><%= group.vote_ratio %>%</div>
+                  <div class="score"><%= 0 %>%</div>
                 </div>
               </div>
               <%= form_with url: votes_path(group_id: group.id), local: true do |form| %>
