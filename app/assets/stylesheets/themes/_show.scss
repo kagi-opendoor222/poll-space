@@ -35,11 +35,12 @@
         font-size: 1.5rem;
       }
       &__bar-graph{
-         margin: 180px 50px 0;
+         margin: 180px 5% 0;
         .bar{
           background: linear-gradient(#40BFB0, #009F8C);
           border: solid 1px white;
-          width: 70%;
+          width: 20%;
+          transition: 0.5s;
           height: 25px;
           position: relative;
           .score{
@@ -61,7 +62,6 @@
         background-color: #C8EFEA;
         border-radius: 10px;
         padding: 20px;
-
         position: relative;
         &__user{
           @include sm-user-name-setting();
@@ -77,7 +77,7 @@
 .poll-button{
   display: inline-block;
   background-color: rgba(#009F8C, 0.9);
-  margin: -30px 40px;
+  margin: -30px 5%;
   padding:  2px 20px;
   border-radius: 10px;
   border: solid 1px white;
