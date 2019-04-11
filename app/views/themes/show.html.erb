@@ -6,13 +6,15 @@
   <div class="contents-container">
     <ul class="group-boards">
       <% @theme.groups.each do |group| %>
-        <li class="group-board">
+        <!-- <input name="group_json" type="hidden" value="<%= group.to_json %>" class=""> -->
+        <li class="group-board" id="group<%= group.id %>-board" >
+          <%= hidden_field_tag("group#{group.id}", group.vote_ratio, id: "group#{group.id}-vote-ratio") %>
           <div class="group-board-top">
             <div class="group-detail">
               <div class="group-detail__title"><%= group.name %></div>
               <div class="group-detail__bar-graph">
                 <div class="bar">
-                  <div class="score">70%</div>
+                  <div class="score"><%= 0 %>%</div>
                 </div>
               </div>
               <%= form_with url: votes_path(group_id: group.id), local: true do |form| %>

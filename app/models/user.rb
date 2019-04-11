@@ -4,6 +4,10 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :omniauthable
 
+  #association
+  has_many :themes
+  has_many :votes
+
   def self.from_omniauth(auth)
     self.where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
       user.email = auth.info.email || self.dummy_email_with(auth)
