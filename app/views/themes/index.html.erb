@@ -44,6 +44,14 @@
         <div class="stream">
           <% @themes.each do |theme| %>
             <div class="theme-card">
+              <ul class="theme-card__img-box">
+                <li>
+                  <%= image_tag("https://storage.tenki.jp/storage/static-images/suppl/article/image/2/27/277/27740/1/large.jpg", ) %>
+                </li>
+                <li>
+                <%= image_tag("https://d2dcan0armyq93.cloudfront.net/photo/odai/600/f49459ac1abdc1f6130807d9d9d1c610_600.jpg", ) %>
+                </li>
+              </ul>
               <div class="theme-card__title">
                 <div class="theme-detail">
                   <div class="theme-detail__title"><%= theme.name %></div>

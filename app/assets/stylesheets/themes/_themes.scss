@@ -150,10 +150,29 @@ body{
   // border: solid 3px $headerAccent;
   box-shadow: 1px 1px 2px;
   margin-bottom: 35px;
+  position: relative;
+  &__img-box{
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    li{
+      width: 50%;
+      img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
   .theme-card__title{
     // border-bottom: solid 3px $headerAccent;
-    background: url("https://photo-pot.com/wp/wp-content/uploads/2011/08/town1.jpg");
+    // background: url("https://photo-pot.com/wp/wp-content/uploads/2011/08/town1.jpg");
+    // url("https://www.pakutaso.com/shared/img/thumb/KAZTDSCF7026_TP_V.jpg");
+    // background-position: left 0px center,
+    // right 0px center;
     background-size:cover;
+    position: absolute;
+    top: 0;
     .theme-detail{
       height: 120px;
       color: white;
