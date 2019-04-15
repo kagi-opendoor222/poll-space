@@ -1,6 +1,6 @@
 class ThemesController < ApplicationController
   def index
-
+    @themes = Theme.all
   end
   def new
     @theme = Theme.new
@@ -11,6 +11,15 @@ class ThemesController < ApplicationController
       group = theme.groups.create(group_params(i))
     end
     redirect_to themes_path
+  end
+  def show
+    @theme = Theme.find(params[:id])
+    # @votes_counts = @theme.groups.votes_counts
+    # @votes_ratios = Group.to_ratio(@votes_counts)
+    # @votes_ratios = @votes_counts.to_ratio
+    # @votes_ratios = @votes_counts.map do |count|
+    #   binding.pry
+    # end
   end
   private
   def theme_params

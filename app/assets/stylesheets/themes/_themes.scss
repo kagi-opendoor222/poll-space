@@ -10,8 +10,6 @@ h2{
 }
 
 body{
-    background: url("https://www.illust-pocket.com/wp-content/uploads/2016/12/colorful_frame_5641-500x375.jpg");
-    background-image: url(http://en.freejpg.com.ar/asset/900/94/940a/F100007969.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-color: #EBEDED;
@@ -24,18 +22,27 @@ body{
   color: black;
   padding: 25px 195px 0px;
   box-sizing: border-box;
-  border-bottom: solid 10px $headerAccent;
+  border-bottom: solid 3px $headerAccent;
+}
+
+.page-container{
+  background-color: rgba($topBackground, 0.85);
+  padding: 50px 0 5px;
 }
 
 .contents-container{
   display:         flex;
   justify-content: center;
   margin: 0 auto;
+  padding: 30px 50px;
+  width: 70%;
+  // background-color: white;
   // background-color: rgba($topBackground, 0.85);
   .dashboard{
-    width: 300px;
+    width: 250px;
     .dashboard-top{
       height: 45px;
+      margin-bottom: 10px;
     }
     .dashboard-main{
       background-color: white;
@@ -44,12 +51,13 @@ body{
     }
   }
   .main-content{
-    width: 700px;
-    margin-left: 80px;
+    width: 70%;
+    margin: 0 0 0 40px;
     .main-content-top{
       display: flex;
       justify-content: space-between;
       height: 45px;
+      margin-bottom: 10px;
       h2{
         display: inline-block;
       }
@@ -90,7 +98,6 @@ body{
       }
     }
     .main-content-board{
-      height: 1000px;
       padding: 0;
     }
   }
@@ -106,25 +113,24 @@ body{
   }
 }
 .user-info{
-  display: flex;
+  // display: flex;
   background-color: white;
-  padding: 0 15px;
+  padding: 0 20px;
   &__img{
-    width: 75px;
-    height: 75px;
+    width: 30%;
     margin-top: -30px;
     border: 1px solid black;
     background-color: white;
   }
   &__count{
-    width: 250px;
+    // width: 220px;
     height: 200px;
-    margin: 50px 0 0 10px;
+    margin: 20px 0 0 0;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
       .count-status{
-        width: 70px;
         margin-left: 20px;
         &__name{
           font-size: 0.7rem;
@@ -144,10 +150,29 @@ body{
   // border: solid 3px $headerAccent;
   box-shadow: 1px 1px 2px;
   margin-bottom: 35px;
+  position: relative;
+  &__img-box{
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    li{
+      width: 50%;
+      img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
   .theme-card__title{
     // border-bottom: solid 3px $headerAccent;
-    background: url("https://photo-pot.com/wp/wp-content/uploads/2011/08/town1.jpg");
+    // background: url("https://photo-pot.com/wp/wp-content/uploads/2011/08/town1.jpg");
+    // url("https://www.pakutaso.com/shared/img/thumb/KAZTDSCF7026_TP_V.jpg");
+    // background-position: left 0px center,
+    // right 0px center;
     background-size:cover;
+    position: absolute;
+    top: 0;
     .theme-detail{
       height: 120px;
       color: white;

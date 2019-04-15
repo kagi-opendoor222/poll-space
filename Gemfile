@@ -65,3 +65,6 @@ gem 'pry-rails'
 gem 'mini_magick'
 gem 'devise'
 gem 'omniauth-twitter'
+gem 'devise'
+gem 'omniauth-twitter'
+
