@@ -6,7 +6,6 @@ class ThemesController < ApplicationController
     @theme = Theme.new
   end
   def create
-    binding.pry
     theme = Theme.create(theme_params)
     params[:group][:number_of_groups].to_i.times do |i|
       group = theme.groups.create(group_params(i))
@@ -27,6 +26,6 @@ class ThemesController < ApplicationController
     params.require(:theme).permit(:name).merge({user_id: current_user.id})
   end
   def group_params(i)
-    params.require(:group).require("group#{i}").permit(:name, :message)
+    params.require(:group).require("group#{i}").permit(:name, :message, :image)
   end
 end
