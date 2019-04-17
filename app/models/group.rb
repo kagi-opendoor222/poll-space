@@ -18,6 +18,6 @@ class Group < ApplicationRecord
 
   def vote_ratio
     all_counts = self.theme.groups.votes_counts
-    return (self.votes.length.to_f / all_counts.sum * 100).round
+    return all_counts.sum > 0 ? (self.votes.length.to_f / all_counts.sum * 100).round : 0
   end
 end
