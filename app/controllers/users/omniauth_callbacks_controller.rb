@@ -4,7 +4,6 @@ class Users::OmniauthCallbacksController < ApplicationController
     if @user.persisted?
       sign_in_and_redirect @user, event: :authentication #this will throw if @user is not activate
       flash[:notice] = "success!"
-       binding.pry
     else
       session["devise.twitter_data"] = request.env["omniauth.auth"]
       redirect_to new_user_registration_url

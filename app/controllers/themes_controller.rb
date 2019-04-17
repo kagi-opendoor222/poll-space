@@ -1,4 +1,5 @@
 class ThemesController < ApplicationController
+  before_action :authenticate_user!, only: [:new, :create]
   def index
     @themes = Theme.all
   end
@@ -23,9 +24,9 @@ class ThemesController < ApplicationController
   end
   private
   def theme_params
-    params.require(:theme).permit(:name)
+    params.require(:theme).permit(:name).merge({user_id: current_user.id})
   end
   def group_params(i)
-    params.require(:group).require("group#{i}").permit(:name, :message)
+    params.require(:group).require("group#{i}").permit(:name, :message, :image)
   end
 end
