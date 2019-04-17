@@ -2,6 +2,8 @@ class Group < ApplicationRecord
   belongs_to :theme
   has_many :votes
 
+  has_one_attached :image
+
   def votes_count
     self.votes.length
   end

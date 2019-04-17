@@ -2,7 +2,7 @@
   <div class="theme-title">
     投票テーマ作成フォーム
   </div>
-  <%= form_with model: @theme, class:"theme-create-form", local: true do |form| %>
+  <%= form_with model: @theme, class:"theme-create-form", local: true, multipart: true do |form| %>
     <%= form.label "theme-create-form__input-theme-name", "投票テーマ入力" %>
     <%= form.text_field :name, class: "theme-create-form__input-theme-name" %>
 
@@ -15,7 +15,8 @@
           <%= form.label "theme-create-form__input-group-message", "メッセージ" %>
           <%= text_area "group[group#{i}]".to_sym, :message, class: "theme-create-form__input-grpup-message", placeholder: "例：かわいい" %><br>
           <label>画像</label><br>
-          <input type="file">
+          <!-- <input type="file"> -->
+          <%= file_field "group[group#{i}]", :image %>
         </div>
       <% end %>
     </div>
