@@ -17,7 +17,7 @@
                 <div class="bar">
                   <div class="score"><%= 0 %>%</div>
                 </div>
-              <%= form_with url: votes_path(group_id: group.id), local: true do |form| %>
+              <%= form_with url: votes_path(group_id: group.id), class: "poll-form", local: true do |form| %>
                 <%= form.submit "投票", class: "poll-button" %>
               <% end %>
               </div>
