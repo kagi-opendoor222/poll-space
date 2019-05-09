@@ -32,8 +32,10 @@
       justify-content: space-between;
       height: 45px;
       margin-bottom: 10px;
+      color: $normalCharaColor;
       h2{
         display: inline-block;
+        color: $normalCharaColor;
       }
       &__post-theme-button{
         appearance: none;
