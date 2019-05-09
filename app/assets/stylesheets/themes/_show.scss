@@ -19,10 +19,11 @@
   min-width: 300px;
   .group-board-top{
     position: relative;
-    // overflow: hidden;
+    height: 300px;
+    overflow: hidden;
     .group-image{
-      height: 40%;
       width: 100%;
+      height: 100%;
       object-fit: cover;
     }
     .group-detail{
@@ -60,6 +61,8 @@
             position: absolute;
             right: 0px;
             bottom: -23px;
+            text-shadow:#232232 1px 1px 0px, #232232 1px 1px 0px,
+            #232232 1px 1px 0px, #232232 1px 1px 0px;
           }
         }
       }

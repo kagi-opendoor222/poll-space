@@ -10,7 +10,7 @@
         <li class="group-board" id="group<%= group.id %>-board" >
           <%= hidden_field_tag("group#{group.id}", group.vote_ratio, id: "group#{group.id}-vote-ratio") %>
           <div class="group-board-top">
-            <%= image_tag("https://www.pakutaso.com/shared/img/thumb/KAZTDSCF7026_TP_V.jpg", class: "group-image") %>
+            <%= image_tag(group.image, class: "group-image") %>
             <div class="group-detail">
               <div class="group-detail__title"><%= group.name %></div>
               <div class="group-detail__bar-graph">
