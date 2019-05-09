@@ -44,13 +44,15 @@
         <div class="stream">
           <% @themes.each do |theme| %>
             <div class="theme-card">
-              <ul class="theme-card__img-box">
-                <% theme.groups.each do |group| %>
-                  <li>
-                    <%= image_tag(group.image) if group.image %>
-                  </li>
-                <% end %>
-              </ul>
+            <%= link_to theme_path(theme) do %>
+                <ul class="theme-card__img-box">
+                    <% theme.groups.each do |group| %>
+                      <li>
+                        <%= image_tag(group.image) if group.image %>
+                      </li>
+                    <% end %> 
+                </ul>
+              <% end %>
               <div class="theme-card__title">
                 <div class="theme-detail">
                   <div class="theme-detail__title"><%= theme.name %></div>
