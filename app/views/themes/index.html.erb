@@ -35,9 +35,17 @@
     <div class="main-content">
       <div class="main-content-top">
         <h2>投票</h2>
-        <%= link_to new_theme_path, class:"main-content-top__post-theme-button" do%>
-          <span>テーマを投稿</span>
-        <% end %>
+        <div class="main-content-top__button-wrapper">
+          <% unless user_signed_in? %>
+            <%= link_to "http://127.0.0.1:3000/users/auth/twitter", class:"main-content-top__post-theme-button" do%>
+              <span>ログイン</span>
+            <% end %>
+            <% else%>
+            <%= link_to new_theme_path, class:"main-content-top__post-theme-button" do%>
+              <span>テーマを投稿</span>
+            <% end %>
+          <% end %>
+        </div>
       </div>
       <div class="main-content-board">
         <div class="stream">

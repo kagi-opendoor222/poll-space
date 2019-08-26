@@ -37,12 +37,16 @@
         display: inline-block;
         color: $normalCharaColor;
       }
+      &__button-wrapper{
+        display:flex;
+      }
       &__post-theme-button{
         appearance: none;
         display: inline-block;
         vertical-align: middle;
         height: 80%;
         width: 170px;
+        margin-left: 20px;
         background-color: white;
         display: flex;
         justify-content: center;
